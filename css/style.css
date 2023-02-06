@@ -1,0 +1,161 @@
+@import url('./font/eb-garamond.css');
+/*///// common css //////*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+    font-family: 'EB Garamond', serif;
+}
+
+.primay-bg-color{
+    background: #B68C5A !important;
+}
+
+/*/////// NAVBAR STYLE //////*/
+.toggler-icon-color{
+    color: black !important;
+}
+.body-section{
+    margin: 60px 0;
+}
+li{
+    list-style: none;
+}
+.futter-btn{
+    margin-left: -8px;
+    margin-bottom: 2px;
+}
+
+
+
+/*POPUP FORM STYLE*/
+  .form-popup {
+    display: none;
+    position: fixed;
+    top: 100px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .form-container .btn {
+    background-color: #B68C5A;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+  }
+  
+  .form-container .cancel {
+    background-color: black;
+  }
+
+
+  /*/////// BANNER STYLE //////*/
+  .banner-section{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .banner-content{
+    width: 80%;
+  }
+  .banner_title{
+    font-size: 72px;
+    font-weight: 800;
+  }
+  form input{
+    width: 50%;
+    padding: 5px;
+  }
+  input::placeholder{
+    font-size: 20px;
+  }
+
+   /*/////// LEGAL STYLE //////*/
+   .legal-content, .client-content, .feature-product{
+    width: 70%;
+   }
+   .legal_title, .client_title{
+    font-size: 50px;
+    font-weight: 600;
+   }
+   .card-icon{
+    width: 100px;
+    height: auto;
+   }
+   .card-btn-icon{
+    width: 50px;
+    height: auto;
+   }
+   .legal-card-item{
+    border: 1px solid rgba(135, 135, 135, 0.1);
+   }
+   .legal-card-item:hover{
+    background: linear-gradient(to bottom, #F3F3F3, #ffff);
+   }
+
+/*/////// CLIENT SECTION STYLE //////*/
+
+.slider-content{
+    width: 80%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+
+.acordion-bg{
+    background: rgb(235, 234, 234) !important;
+}
+
+
+
+  /* header responsive */
+  @media (max-width: 576px) {
+    .banner-content{
+        padding: 8px;
+        margin: 0;
+    }
+    .banner_title{
+        font-size: 35px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card-title{
+        font-size: 30px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .banner_title{
+        font-size: 50px;
+    }
+   }
+  
