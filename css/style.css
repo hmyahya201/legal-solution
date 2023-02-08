@@ -5,13 +5,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+  font-size: 10px;
+  
+}
 body{
     font-size: 10px;
     font-family: 'EB Garamond', serif;
 }
+:root{
+  --font-family: 'EB Garamond', serif;
+  --primary-bg-color: #B68C5A;
+}
 
 .primay-bg-color{
-    background: #B68C5A !important;
+    background: var(--primary-bg-color) !important;
 }
 
 /*/////// NAVBAR STYLE //////*/
@@ -36,15 +44,18 @@ li{
     display: none;
     position: fixed;
     top: 100px;
-    right: 15px;
+    right: 80px;
     border: 3px solid #f1f1f1;
     z-index: 9;
   }
   
   .form-container {
     max-width: 300px;
-    padding: 10px;
+    padding: 20px 20px;
     background-color: white;
+  }
+  .form-container label{
+    font-size: 1.5rem;
   }
   
   .form-container input[type=text], .form-container input[type=password] {
@@ -61,6 +72,7 @@ li{
   }
   
   .form-container .btn {
+    font-size: 2rem;
     background-color: #B68C5A;
     color: white;
     padding: 16px 20px;
@@ -82,9 +94,10 @@ li{
     background-size: cover;
   }
   .banner-content{
-    width: 80%;
+    padding: 100px;
   }
   .banner_title{
+    font-family: var(--font-family);
     font-size: 72px;
     font-weight: 800;
   }
@@ -97,16 +110,26 @@ li{
   }
 
    /*/////// LEGAL STYLE //////*/
-   .legal-content, .client-content, .feature-product{
-    width: 70%;
-   }
-   .legal_title, .client_title{
+   .legal_title, .client_title, .blog_title, .faq_title{
+    font-family: var(--font-family);
     font-size: 50px;
     font-weight: 600;
    }
    .card-icon{
-    width: 100px;
+    width: 85px;
     height: auto;
+   }
+   .card-icon-criminal-low{
+    width: 79px;
+   }
+   .card-icon-child-support{
+    width: 88px;
+   }
+   .card-icon-divorce{
+    width: 122px;
+   }
+   .card-icon-tax{
+    width: 95px;
    }
    .card-btn-icon{
     width: 50px;
@@ -120,40 +143,68 @@ li{
    }
 
 /*/////// CLIENT SECTION STYLE //////*/
-
-.slider-content{
-    width: 80%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
+.carousel-item-1{
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/slider-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
 }
-
-
+.carousel-item-2{
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/slider-2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+.carousel-item-3{
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/slider-3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
 .acordion-bg{
     background: rgb(235, 234, 234) !important;
 }
 
-
+/*/////// FOOTER SECTION STYLE //////*/
+  form button i{
+    font-size: 14px;
+  }
 
   /* header responsive */
   @media (max-width: 576px) {
     .banner-content{
-        padding: 8px;
+       font-family: var(--font-family);
+        padding: 50px 0px;
         margin: 0;
     }
     .banner_title{
         font-size: 35px;
     }
+    .legal_title, .client_title, .blog_title, .faq_title{
+      font-family: var(--font-family);
+      font-size: 40px;
+      font-weight: 600;
+     }
   }
 
   @media (max-width: 768px) {
+    .banner-content{
+      padding: 50px 0;
+      margin: 0;
+  }
     .card-title{
         font-size: 30px;
     }
   }
 
   @media (max-width: 992px) {
+    .banner-content{
+      padding: 60px 0;
+      margin: 0;
+  }
     .banner_title{
         font-size: 50px;
     }
